@@ -5,4 +5,7 @@ It's a subscription plan app xamarin ui sample ;)
 
 Android | iOS
 ------------ | -------------
-<img width="300" src="https://user-images.githubusercontent.com/5353685/76242173-fb1bea00-6214-11ea-8621-9328dff584c7.png"/>| <img width="300" src="https://user-images.githubusercontent.com/5353685/76241818-57323e80-6214-11ea-8d61-9e15c0b88fd5.png"/>
+<img width="300" src="https://raw.githubusercontent.com/alexandresanlim/SubscriptionPlan.XamarinUI/master/SubscriptionPlan.XamarinUI/SubscriptionPlan.XamarinUI/Screenshots/android.jpg"/>| <img width="300" src="https://raw.githubusercontent.com/alexandresanlim/SubscriptionPlan.XamarinUI/master/SubscriptionPlan.XamarinUI/SubscriptionPlan.XamarinUI/Screenshots/ios.png"/>
+
+
+<a href="https://snppts.dev/"><img src="https://camo.githubusercontent.com/b72b502eb8f3df149f75f8a72f7d0f9f35728827/68747470733a2f2f7777772e736e707074732e6465762f696d672f736e707074732d62616467652e6a7067" /></a>
