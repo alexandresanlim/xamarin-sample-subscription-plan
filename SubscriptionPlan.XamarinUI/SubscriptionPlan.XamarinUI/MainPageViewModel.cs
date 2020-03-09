@@ -7,7 +7,7 @@ using System.Text;
 
 namespace SubscriptionPlan.XamarinUI
 {
-    public class MainPageViewModel : INotifyPropertyChanged
+    public class MainPageViewModel
     {
         public MainPageViewModel()
         {
@@ -16,19 +16,19 @@ namespace SubscriptionPlan.XamarinUI
                 new SubscriptionPlanModel
                 {
                     Title = "Base",
-                    Description = "It's a base description plan",
+                    Description = "It's a base plan description",
                     Price = 10
                 },
                 new SubscriptionPlanModel
                 {
                     Title = "Medium",
-                    Description = "it's a medium a description plan",
+                    Description = "it's a medium plan description",
                     Price = 30
                 },
                 new SubscriptionPlanModel
                 {
                     Title = "Ultimate",
-                    Description = "It's a ultimate plan",
+                    Description = "It's a ultimate plan description",
                     Price = 100
                 },
             };
