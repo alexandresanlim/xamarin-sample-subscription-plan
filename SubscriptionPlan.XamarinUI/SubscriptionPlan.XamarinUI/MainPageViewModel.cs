@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Text;
+using System.Windows.Input;
+using Xamarin.Forms;
 
 namespace SubscriptionPlan.XamarinUI
 {
@@ -34,6 +36,12 @@ namespace SubscriptionPlan.XamarinUI
             };
         }
 
+        public ICommand SelectedItemCommand => new Command(() =>
+        {
+
+        });
+
         public ObservableCollection<SubscriptionPlanModel> PlanList { get; set; }
+
     }
 }

@@ -13,10 +13,11 @@
 
     <ContentPage.Content>
 
-        <Grid>
+        <Grid RowSpacing="3">
             <Grid.RowDefinitions>
                 <RowDefinition Height="0.5*"/>
                 <RowDefinition Height="*"/>
+                <RowDefinition Height="auto"/>
             </Grid.RowDefinitions>
 
             <!--Header-->
@@ -30,7 +31,7 @@
             <!--Body-->
             <StackLayout BackgroundColor="{StaticResource background_page}" Grid.Row="1" Spacing="15">
                 <Frame CornerRadius="20" Margin="0,-50,0,-70" BackgroundColor="{StaticResource background_page}" HasShadow="False" HeightRequest="50"/>
-                <CollectionView ItemsSource="{Binding PlanList}">
+                <CollectionView SelectionMode="Single"  ItemsSource="{Binding PlanList}" SelectionChangedCommand="{Binding SelectedItemCommand}" SelectedItem="{Binding SelectedItem}">
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
                             <Grid Padding="15,5" ColumnSpacing="0">
@@ -79,6 +80,13 @@
                     </CollectionView.ItemTemplate>
                 </CollectionView>
             </StackLayout>
+
+            <!--Button-->
+            <Frame Grid.Row="2" CornerRadius="50" BackgroundColor="{StaticResource primary}" Margin="5,0" HasShadow="False">
+                <Frame.Content>
+                    <Label Text="Subscription" HorizontalTextAlignment="Center" FontSize="Medium" FontAttributes="Bold" TextColor="{StaticResource icons}"/>
+                </Frame.Content>
+            </Frame>
 
         </Grid>
 
