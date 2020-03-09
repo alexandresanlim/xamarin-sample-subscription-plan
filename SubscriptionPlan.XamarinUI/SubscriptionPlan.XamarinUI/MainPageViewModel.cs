@@ -16,27 +16,21 @@ namespace SubscriptionPlan.XamarinUI
                 new SubscriptionPlanModel
                 {
                     Title = "Base",
-                    Description = "Description Plan",
+                    Description = "It's a base description plan",
                     Price = 10
                 },
                 new SubscriptionPlanModel
                 {
                     Title = "Medium",
-                    Description = "Description Plan",
+                    Description = "it's a medium a description plan",
                     Price = 30
                 },
                 new SubscriptionPlanModel
                 {
                     Title = "Ultimate",
-                    Description = "Description Plan",
+                    Description = "It's a ultimate plan",
                     Price = 100
                 },
-                new SubscriptionPlanModel
-                {
-                    Title = "Ultimate",
-                    Description = "Description Plan",
-                    Price = 100
-                }
             };
         }
 
