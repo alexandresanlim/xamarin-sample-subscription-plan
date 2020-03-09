@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SubscriptionPlan.XamarinUI.App">
+    <Application.Resources>
+        <Color x:Key="primary">#3F51B5</Color>
+        <Color x:Key="primary_dark">#303F9F</Color>
+        <Color x:Key="primary_light">#C5CAE9</Color>
+        <Color x:Key="accent">#448AFF</Color>
+        <Color x:Key="primary_text">#212121</Color>
+        <Color x:Key="secondary_text">#757575</Color>
+        <Color x:Key="icons">#FFFFFF</Color>
+        <Color x:Key="divider">#BDBDBD</Color>
+        <Color x:Key="background_page">#ecf0f1</Color>
+
+
+    </Application.Resources>
+</Application>
