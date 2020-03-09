@@ -31,7 +31,7 @@
             <!--Body-->
             <StackLayout BackgroundColor="{StaticResource background_page}" Grid.Row="1" Spacing="15">
                 <Frame CornerRadius="20" Margin="0,-50,0,-70" BackgroundColor="{StaticResource background_page}" HasShadow="False" HeightRequest="50"/>
-                <CollectionView SelectionMode="Single"  ItemsSource="{Binding PlanList}" SelectionChangedCommand="{Binding SelectedItemCommand}" SelectedItem="{Binding SelectedItem}">
+                <CollectionView SelectionMode="Single"  ItemsSource="{Binding PlanList}" SelectedItem="{Binding SelectedItem}">
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
                             <Grid Padding="15,5" ColumnSpacing="0">

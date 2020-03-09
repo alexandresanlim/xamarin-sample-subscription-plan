@@ -36,12 +36,9 @@ namespace SubscriptionPlan.XamarinUI
             };
         }
 
-        public ICommand SelectedItemCommand => new Command(() =>
-        {
-
-        });
-
         public ObservableCollection<SubscriptionPlanModel> PlanList { get; set; }
+
+        public SubscriptionPlanModel SelectedItem { get; set; }
 
     }
 }
