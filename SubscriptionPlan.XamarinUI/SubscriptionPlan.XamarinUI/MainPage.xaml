@@ -44,7 +44,7 @@
                                     <Frame CornerRadius="15" BackgroundColor="{StaticResource accent}" HeightRequest="140" HasShadow="False">
                                         <Frame.Content>
                                             <StackLayout>
-                                                <Label Text="{Binding PricePresentation}" FontAttributes="Bold" FontSize="Subtitle" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" TextColor="{StaticResource icons}"/>
+                                                <Label Text="{Binding PricePresentation}" FontAttributes="Bold" FontSize="Medium" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" TextColor="{StaticResource icons}"/>
                                             </StackLayout>
                                         </Frame.Content>
                                     </Frame>
@@ -60,6 +60,7 @@
                                     <Label Text="|" FontAttributes="Bold" TextColor="WhiteSmoke" FontSize="8"/>
                                     <Label Text="|" FontAttributes="Bold" TextColor="WhiteSmoke" FontSize="8"/>
                                     <Label Text="|" FontAttributes="Bold" TextColor="WhiteSmoke" FontSize="8"/>
+                                    <Label Text="|" FontAttributes="Bold" TextColor="WhiteSmoke" FontSize="8"/>
                                 </StackLayout>
 
                                 <StackLayout Grid.Column="2">
@@ -67,12 +68,9 @@
                                         <Frame.Content>
                                             <StackLayout>
                                                 <Label Text="{Binding Title}" FontAttributes="Bold" FontSize="Medium" TextColor="{StaticResource icons}"/>
-
                                                 <Label Text="{Binding Description}" FontSize="Body" TextColor="{StaticResource icons}" />
-
                                             </StackLayout>
                                         </Frame.Content>
-
                                     </Frame>
                                 </StackLayout>
 

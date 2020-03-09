@@ -29,13 +29,11 @@ namespace SubscriptionPlan.XamarinUI
                 {
                     Title = "Ultimate",
                     Description = "It's a ultimate plan description",
-                    Price = 100
+                    Price = 90
                 },
             };
         }
 
         public ObservableCollection<SubscriptionPlanModel> PlanList { get; set; }
-
-        public event PropertyChangedEventHandler PropertyChanged;
     }
 }
