@@ -4,14 +4,23 @@ using System.Text;
 
 namespace SubscriptionPlan.XamarinUI.Models
 {
-    public class SubscriptionPlanModel
+    public class SubscriptionPlan
     {
-        public string Title { get; set; }
+        public Plan Plan { get; set; }
 
-        public string Description { get; set; }
+        public CreditCart CreditCart { get; set; }
 
-        public decimal Price { get; set; }
-
-        public string PricePresentation { get { return Price.ToString("C"); } }
+        public static SubscriptionPlan Get()
+        {
+            return new SubscriptionPlan
+            {
+                CreditCart = new CreditCart
+                {
+                    Number = "**** **** **** 9999",
+                    Name = "Hans",
+                    Surname = "Hoppe"
+                }
+            };
+        }
     }
 }
