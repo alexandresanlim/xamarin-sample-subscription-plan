@@ -6,10 +6,10 @@
              mc:Ignorable="d"
              x:Class="SubscriptionPlan.XamarinUI.App">
     <Application.Resources>
-        <Color x:Key="primary">#3F51B5</Color>
-        <Color x:Key="primary_dark">#303F9F</Color>
-        <Color x:Key="primary_light">#C5CAE9</Color>
-        <Color x:Key="accent">#448AFF</Color>
+        <Color x:Key="primary">#00BCD4</Color>
+        <Color x:Key="primary_dark">#0097A7</Color>
+        <Color x:Key="primary_light">#B2EBF2</Color>
+        <Color x:Key="accent">#009688</Color>
         <Color x:Key="primary_text">#212121</Color>
         <Color x:Key="secondary_text">#757575</Color>
         <Color x:Key="icons">#FFFFFF</Color>
