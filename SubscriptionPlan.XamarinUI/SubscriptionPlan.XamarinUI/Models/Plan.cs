@@ -11,6 +11,25 @@ namespace SubscriptionPlan.XamarinUI.Models
 
         public string Description { get; set; }
 
+        public ChargeType ChargeType { get; set; }
+
+        public string ChargeTypePresentation
+        {
+            get
+            {
+                switch (ChargeType)
+                {
+                    case ChargeType.Yearly:
+                        return " / year";
+                    case ChargeType.Monthly:
+                    default:
+                        return " / month";
+                }
+            }
+        }
+
+        public string TitleAndChargeTypePresentation => Title + " - " + ChargeType.ToString().ToLower();
+
         public decimal Price { get; set; }
 
         public string PricePresentation { get { return Price.ToString("C"); } }
@@ -51,5 +70,11 @@ Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget. Suc
                 },
             };
         }
+    }
+
+    public enum ChargeType
+    {
+        Monthly,
+        Yearly
     }
 }

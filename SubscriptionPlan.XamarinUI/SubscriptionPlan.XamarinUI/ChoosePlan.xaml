@@ -44,11 +44,10 @@
                                     >
 
                                     <StackLayout>
-                                        <Label Text="{Binding Title}" FontAttributes="Bold" FontSize="Title" TextColor="{StaticResource primary_text}"/>
-                                        <StackLayout Orientation="Horizontal">
-                                            <Label Text="{Binding PricePresentation}" FontAttributes="Bold" FontSize="Title" TextColor="{StaticResource primary_text}"/>
-                                            <Label Text=" / month" FontAttributes="Bold" FontSize="Subtitle" TextColor="{StaticResource secondary_text}" VerticalOptions="End"/>
-
+                                        <Label Text="{Binding Title}" FontAttributes="Bold" FontSize="Title" TextColor="{StaticResource primary_text}" HorizontalOptions="Center" />
+                                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                                            <Label Text="{Binding PricePresentation}" FontAttributes="Bold" FontSize="Title" TextColor="{StaticResource primary_text}" VerticalOptions="End" />
+                                            <Label Text="{Binding ChargeTypePresentation}" FontAttributes="Bold" FontSize="Subtitle" TextColor="{StaticResource secondary_text}" VerticalOptions="End" />
                                         </StackLayout>
 
                                         <ScrollView Margin="0,15,0,0">

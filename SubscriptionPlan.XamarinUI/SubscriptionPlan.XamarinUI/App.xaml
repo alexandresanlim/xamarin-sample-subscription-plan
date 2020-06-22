@@ -16,6 +16,11 @@
         <Color x:Key="divider">#BDBDBD</Color>
         <Color x:Key="background_page">#ecf0f1</Color>
 
+        <OnPlatform x:Key="FontAwesomeSolid" x:TypeArguments="x:String">
+            <On Platform="iOS" Value="Font Awesome 5 Free" />
+            <On Platform="Android" Value="fa-solid-900.ttf#Font Awesome 5 Free" />
+        </OnPlatform>
+
         <Style TargetType="Grid">
             <Setter Property="VisualStateManager.VisualStateGroups">
                 <VisualStateGroupList>

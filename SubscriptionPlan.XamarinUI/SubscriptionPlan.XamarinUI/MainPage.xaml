@@ -14,50 +14,97 @@
     </ContentPage.BindingContext>
 
     <ContentPage.Content>
-        <StackLayout Padding="15" BackgroundColor="{StaticResource background_page}" Spacing="15">
+        <StackLayout BackgroundColor="{StaticResource background_page}" Spacing="15">
+
+            <StackLayout.Padding>
+                <OnPlatform
+                    x:TypeArguments="Thickness">
+                    <On
+                        Platform="iOS"
+                        Value="10,30,10,0" />
+                    <On
+                        Platform="Android"
+                        Value="0,24,0,0" />
+                </OnPlatform>
+            </StackLayout.Padding>
+
             <controls:CustomFrame CornerRadius="15" BackgroundColor="White" Padding="15">
-                <Grid ColumnDefinitions="*, auto" ColumnSpacing="15">
+                <StackLayout>
 
-                    <StackLayout Grid.Column="0">
-                        <Label Text="{Binding CurrentPlan.Title}" FontSize="Medium" FontAttributes="Bold" TextColor="{StaticResource primary_text}" />
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="{Binding CurrentPlan.Title}" HorizontalOptions="StartAndExpand" FontSize="Medium" FontAttributes="Bold" TextColor="{StaticResource primary_text}" />
 
-                        <controls:CustomFrameButton TextButton="Upgrade Plan" Margin="0,30,0,0" TapButtonCommand="{Binding NavigateToUpgradePlanCommand}" />
+                        <StackLayout>
+                            <Label Text="{Binding CurrentPlan.PricePresentation}" FontSize="Medium" FontAttributes="Bold" TextColor="{StaticResource primary_text}" />
+                            <Label Text="{Binding CurrentPlan.ChargeTypePresentation}" TextColor="{StaticResource secondary_text}" FontSize="Small" FontAttributes="Bold" />
+                        </StackLayout>
 
                     </StackLayout>
 
-                    <StackLayout Grid.Column="1" Spacing="0">
-                        <Label Text="{Binding CurrentPlan.PricePresentation}" FontSize="Medium" FontAttributes="Bold" TextColor="{StaticResource primary_text}" HorizontalOptions="End" />
-                        <Label Text=" / month" FontSize="Small" FontAttributes="Bold" HorizontalOptions="End" />
+                    <StackLayout Orientation="Horizontal" Margin="0,30,0,0">
+                        <controls:CustomFrameButton TextButton="Upgrade Plan" HorizontalOptions="StartAndExpand" TapButtonCommand="{Binding NavigateToUpgradePlanCommand}" />
 
                         <Label Text="Cancel subscription" TextColor="{StaticResource accent}" VerticalOptions="EndAndExpand" Margin="0,0,0,15" FontAttributes="Bold"/>
 
                     </StackLayout>
 
-                </Grid>
+                </StackLayout>
 
             </controls:CustomFrame>
 
             <Label Text="Payment Method" FontAttributes="Bold" FontSize="Medium" TextColor="{StaticResource primary_text}" />
-            
-            <controls:CustomFrame BackgroundColor="White" CornerRadius="15">
-                    <StackLayout Padding="15">
-                        <Label Text="Credit Cart" FontSize="Small"/>
-                        <Label Text="{Binding CurrentSubscriptionPlan.CreditCart.Number}" FontSize="Medium" FontAttributes="Bold" TextColor="{StaticResource primary_text}"/>
-                        <Label Text="{Binding CurrentSubscriptionPlan.CreditCart.FullName}" FontSize="Medium" FontAttributes="Bold" TextColor="{StaticResource primary_text}"/>
-
-                        <Label Text="Change payment method" TextColor="{StaticResource accent}" FontAttributes="Bold" Margin="0,15,0,0" />
-                    </StackLayout>
-                </controls:CustomFrame>
-
-            <Label Text="Invoices" FontAttributes="Bold" FontSize="Medium" TextColor="{StaticResource primary_text}" />
 
             <controls:CustomFrame BackgroundColor="White" CornerRadius="15">
                 <StackLayout Padding="15">
-                    <Label Text="Credit Cart" FontSize="Small"/>
+                    <Label Text="Credit Cart" FontSize="Small" TextColor="{StaticResource secondary_text}"/>
                     <Label Text="{Binding CurrentSubscriptionPlan.CreditCart.Number}" FontSize="Medium" FontAttributes="Bold" TextColor="{StaticResource primary_text}"/>
                     <Label Text="{Binding CurrentSubscriptionPlan.CreditCart.FullName}" FontSize="Medium" FontAttributes="Bold" TextColor="{StaticResource primary_text}"/>
 
                     <Label Text="Change payment method" TextColor="{StaticResource accent}" FontAttributes="Bold" Margin="0,15,0,0" />
+                </StackLayout>
+            </controls:CustomFrame>
+
+            <Label Text="Invoices" FontAttributes="Bold" FontSize="Medium" TextColor="{StaticResource primary_text}" />
+
+            <controls:CustomFrame BackgroundColor="White" CornerRadius="15">
+                <StackLayout Padding="5">
+                    <CollectionView ItemsSource="{Binding CurrentSubscriptionPlanHistory}">
+
+                        <CollectionView.ItemTemplate>
+
+                            <DataTemplate>
+                                <StackLayout Padding="15">
+                                    <Label Text="{Binding DatePresentation}" />
+                                    <StackLayout Orientation="Horizontal">
+
+                                        <Label Text="{Binding SubscriptionPlan.Plan.TitleAndChargeTypePresentation}" TextColor="{StaticResource secondary_text}" HorizontalOptions="StartAndExpand" />
+                                        <Label Text="{Binding SubscriptionPlan.Plan.PricePresentation}" TextColor="{StaticResource secondary_text}" HorizontalOptions="StartAndExpand" />
+
+                                        <Image>
+                                            <Image.Source>
+                                                <FontImageSource
+                                                Color="{DynamicResource accent}"
+                                                FontFamily="{DynamicResource FontAwesomeSolid}"
+                                                Size="15"
+                                                Glyph="&#xf019;"
+                                                />
+                                            </Image.Source>
+
+                                            <Image.GestureRecognizers>
+                                                <TapGestureRecognizer Command="{Binding NavigateToPreferenceCommand}" />
+                                            </Image.GestureRecognizers>
+                                        </Image>
+                                    </StackLayout>
+
+                                    
+
+                                </StackLayout>
+
+                            </DataTemplate>
+
+                        </CollectionView.ItemTemplate>
+
+                    </CollectionView>
                 </StackLayout>
             </controls:CustomFrame>
 

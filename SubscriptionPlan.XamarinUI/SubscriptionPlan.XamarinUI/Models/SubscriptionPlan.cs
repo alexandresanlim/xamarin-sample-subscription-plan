@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace SubscriptionPlan.XamarinUI.Models
@@ -19,7 +20,8 @@ namespace SubscriptionPlan.XamarinUI.Models
                     Number = "**** **** **** 9999",
                     Name = "Hans",
                     Surname = "Hoppe"
-                }
+                },
+                Plan = Plan.GetPlans().FirstOrDefault()
             };
         }
     }

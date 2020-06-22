@@ -1,4 +1,5 @@
-﻿using SubscriptionPlan.XamarinUI.Models;
+﻿using SubscriptionPlan.XamarinUI.Interfaces;
+using SubscriptionPlan.XamarinUI.Models;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -16,11 +17,14 @@ namespace SubscriptionPlan.XamarinUI
         {
             CurrentPlan = Plan.GetPlans().FirstOrDefault();
             CurrentSubscriptionPlan = Models.SubscriptionPlan.Get();
+            CurrentSubscriptionPlanHistory = new ObservableCollection<SubscriptionPlanHistory>(SubscriptionPlanHistory.Get().OrderByDescending(x => x.Date));
         }
 
         public Plan CurrentPlan { get; set; }
 
         public Models.SubscriptionPlan CurrentSubscriptionPlan { get; set; }
+
+        public ObservableCollection<SubscriptionPlanHistory> CurrentSubscriptionPlanHistory { get; set; }
 
         public Command NavigateToUpgradePlanCommand => new Command(async () =>
         {

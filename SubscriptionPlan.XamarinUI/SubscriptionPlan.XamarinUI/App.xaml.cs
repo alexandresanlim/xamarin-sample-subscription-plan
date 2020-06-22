@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SubscriptionPlan.XamarinUI.Interfaces;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -11,6 +12,8 @@ namespace SubscriptionPlan.XamarinUI
             InitializeComponent();
 
             MainPage = new NavigationPage(new MainPage());
+
+           
         }
 
         protected override void OnStart()
