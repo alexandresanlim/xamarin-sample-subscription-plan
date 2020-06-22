@@ -1,11 +1,27 @@
 # SubscriptionPlan.XamarinUI
 It's a subscription plan app xamarin ui sample ;)
 
+<img width="230" src="https://github.com/alexandresanlim/XamarinUI.SubscriptionPlan/blob/master/SubscriptionPlan.XamarinUI/SubscriptionPlan.XamarinUI/Screenshots/animation.gif?raw=true"/>
+
 ## Screenshots
 
-Android | iOS
------------- | -------------
-<img width="230" src="https://raw.githubusercontent.com/alexandresanlim/SubscriptionPlan.XamarinUI/master/SubscriptionPlan.XamarinUI/SubscriptionPlan.XamarinUI/Screenshots/android.jpg"/>| <img width="230" src="https://raw.githubusercontent.com/alexandresanlim/SubscriptionPlan.XamarinUI/master/SubscriptionPlan.XamarinUI/SubscriptionPlan.XamarinUI/Screenshots/ios.png"/>
+### Android
+
+| - | - |
+------------ | ------------- | 
+<img width="200" src="https://github.com/alexandresanlim/XamarinUI.SubscriptionPlan/blob/master/SubscriptionPlan.XamarinUI/SubscriptionPlan.XamarinUI/Screenshots/android.jpg?raw=true"/>| <img width="200" src="https://github.com/alexandresanlim/XamarinUI.SubscriptionPlan/blob/master/SubscriptionPlan.XamarinUI/SubscriptionPlan.XamarinUI/Screenshots/android2.jpg?raw=true"/>
+
+### iOS With Notch 
+
+| - | - |
+------------ | ------------- | 
+<img width="200" src="https://github.com/alexandresanlim/XamarinUI.SubscriptionPlan/blob/master/SubscriptionPlan.XamarinUI/SubscriptionPlan.XamarinUI/Screenshots/ios.png?raw=true"/>| <img width="200" src="https://github.com/alexandresanlim/XamarinUI.SubscriptionPlan/blob/master/SubscriptionPlan.XamarinUI/SubscriptionPlan.XamarinUI/Screenshots/ios2.png?raw=true"/> 
+
+### iOS Without Notch (Iphone 8 and Iphone SE 2ª Generation)
+
+| - | - |
+------------ | ------------- | 
+<img width="200" src="https://github.com/alexandresanlim/XamarinUI.SubscriptionPlan/blob/master/SubscriptionPlan.XamarinUI/SubscriptionPlan.XamarinUI/Screenshots/ios3.png?raw=true"/>| <img width="200" src="https://github.com/alexandresanlim/XamarinUI.SubscriptionPlan/blob/master/SubscriptionPlan.XamarinUI/SubscriptionPlan.XamarinUI/Screenshots/ios4.png?raw=true"/> 
 
 ## More
 
