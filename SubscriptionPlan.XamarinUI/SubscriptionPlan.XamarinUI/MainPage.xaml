@@ -21,10 +21,10 @@
                     x:TypeArguments="Thickness">
                     <On
                         Platform="iOS"
-                        Value="10,30,10,0" />
+                        Value="10,40,10,0" />
                     <On
                         Platform="Android"
-                        Value="0,24,0,0" />
+                        Value="10,15,10,0" />
                 </OnPlatform>
             </StackLayout.Padding>
 
@@ -41,8 +41,8 @@
 
                     </StackLayout>
 
-                    <StackLayout Orientation="Horizontal" Margin="0,30,0,0">
-                        <controls:CustomFrameButton TextButton="Upgrade Plan" HorizontalOptions="StartAndExpand" TapButtonCommand="{Binding NavigateToUpgradePlanCommand}" />
+                    <StackLayout Orientation="Horizontal" Margin="0,30,0,0" Spacing="15">
+                        <controls:CustomFrameButton TextButton="Upgrade Plan" HorizontalOptions="FillAndExpand" TapButtonCommand="{Binding NavigateToUpgradePlanCommand}" />
 
                         <Label Text="Cancel subscription" TextColor="{StaticResource accent}" VerticalOptions="EndAndExpand" Margin="0,0,0,15" FontAttributes="Bold"/>
 

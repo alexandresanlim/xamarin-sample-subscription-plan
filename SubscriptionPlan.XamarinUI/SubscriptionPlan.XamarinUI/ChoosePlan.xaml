@@ -20,6 +20,19 @@
 
             <!--Header-->
             <StackLayout Grid.Row="0" Padding="30" Spacing="0">
+                
+                <StackLayout.Padding>
+                    <OnPlatform
+                    x:TypeArguments="Thickness">
+                        <On
+                        Platform="iOS"
+                        Value="10,40,10,0" />
+                        <On
+                        Platform="Android"
+                        Value="10,24,10,0" />
+                    </OnPlatform>
+                </StackLayout.Padding>
+                
                 <Label Text="Choose" FontSize="30" FontAttributes="Bold"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" TextColor="{StaticResource primary_text}"/>
                 <Label Text="your plan" FontSize="30" FontAttributes="Bold"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" TextColor="{StaticResource primary_text}"/>
             </StackLayout>
